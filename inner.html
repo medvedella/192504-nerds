@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Нёрдс. Магазин</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <nav class="main-header-navigation">
+          <ul class="main-header-navigation-list">
+            <li>
+              <a class="main-navigation-logo"><img src="#" alt=""></a>
+            </li>
+            <li>
+              <a class="main-navigation-menu" href="#">Студия</a>
+            </li>
+            <li>
+              <a class="main-navigation-menu" href="#">Клиенты</a>
+            </li>
+            <li>
+              <a class="main-navigation-menu" href="#">Магазин</a>
+            </li>
+            <li>
+              <a class="main-navigation-menu" href="#">Контакты</a>
+            </li>
+            <li>
+              <a class="main-navigation-menu" href="#"><img src="#" alt="">Корзина
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="main-header-hello">
+          <h1>Добро пожаловать в магазин готовых макетов</h1>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="shop-content-left">
+        <h3>Стоимость:</h3> <!-- по идее должен быть как СЕТКА: и ОСОБЕННОСТИ: только жирненький?!-->
+        <input type="range" min="0" max="15000">
+        <span>От</span>
+        <div class="shop-fromto">0</div>
+        <span>До</span>
+        <div class="shop-fromto">15000</div> <!-- или это интерактивные поля, меняющиеся, если мотать колесо туды-сюды -->
+        <form>
+          <fieldset class="shop-netchoice">
+            <legend class="shop-content-title">Сетка:</legend>
+            <ul class="shop-content-nettype">
+              <li>
+                <input type="radio" name="type" id="type1" value="a" checked>
+                <label for="type1">Адаптивная</label>
+              </li>
+              <li>
+                <input type="radio" name="type" id="type2" value="b">
+                <label for="type2">Фиксированная</label>
+              </li>
+              <li>
+                <input type="radio" name="type" id="type3" value="c">
+                <label for="type3">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="shop-featurechoice">
+            <legend class="shop-content-title">Особенности:</legend>
+            <ul class="shop-content-featurelist">
+              <li>
+                <input type="checkbox" name="feature1" id="feature1" checked>
+                <label for="feature1">Слайдер</label>
+              </li>
+              <li>
+                <input type="checkbox" name="feature2" id="feature2">
+                <label for="feature2">Блок преимуществ</label>
+              </li>
+              <li>
+                <input type="checkbox" name="feature3" id="feature3" checked>
+                <label for="feature3">Новости</label>
+              </li>
+              <li>
+                <input type="checkbox" name="feature4" id="feature4">
+                <label for="feature4">Галерея</label>
+              </li>
+              <li>
+                <input type="checkbox" name="feature5" id="feature5">
+                <label for="feature5">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit">Показать</button>
+        </form>
+      </div>
+      <div class="shop-content-right">
+        <span>Сортировать:</span>
+        <ul>
+          <li><a href="#">по цене</a></li>
+          <li><a href="#">по типу</a></li>
+          <li><a href="#">по функционалу</a></li> <!-- сомнительно это всё, конечно -->
+        </ul>
+        <div class="updownsort"></div> <!-- направляющие треуголнички... что это как это вообще-->
+        <ul class="shop-content-itemlist">
+          <li class="shop-item">
+            <a href="#"><img src="#" alt=""></a>
+          </li>
+          <li class="shop-item">
+            <a href="#"><img src="#" alt=""></a>
+          </li>
+          <li class="shop-item">
+            <a href="#"><img src="#" alt=""></a>
+          </li>
+          <li class="shop-item">
+            <a href="#"><img src="#" alt=""></a>
+          </li>
+          <li class="shop-item">
+            <a href="#"><img src="#" alt=""></a>
+          </li>
+          <li class="shop-item">
+            <a href="#"><img src="#" alt=""></a>
+          </li>
+        </ul>
+      </div>
+      <div class="shop-paginator">
+        <div class="shop-page">
+          <a class="btn-page">1</a>
+        </div>
+        <div class="shop-page">
+          <a class="btn-page" href="#">2</a>
+        </div>
+        <div class="shop-page">
+          <a class="btn-page" href="#">3</a>
+        </div>
+        <div class="shop-page">
+          <a class="btn-page" href="#">Следующая</a>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-map">
+        <img src="#" alt="">
+        <div class="footer-map-form">
+          <b>Nёrds Design Studio</b>
+          <p>191186, Санкт-Петербург,
+          ул. Б. Конюшенная, д. 19/8</p>
+          <p>тел. +7 (812) 275-75-75</p>
+          <a class="btn-writeus">Напишите нам</a>
+        </div>
+      </div>
+      <div class="footer-social">
+        <a class="social-btn" href="#">ВКонтакте</a>
+        <a class="social-btn" href="#">Фейсбук</a>
+        <a class="social-btn" href="#">Инстаграм</a>
+        <h2>Давайте дружить, это выгодно!</h2>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </footer>
+  </body>
+</html>
