@@ -8,10 +8,8 @@
     <header class="main-header">
       <div class="container">
         <nav class="main-header-navigation">
+          <a class="main-navigation-logo" href="#"><img src="#" alt=""></a>
           <ul class="main-header-navigation-list">
-            <li>
-              <a class="main-navigation-logo"><img src="#" alt=""></a>
-            </li>
             <li>
               <a class="main-navigation-menu" href="#">Студия</a>
             </li>
@@ -19,16 +17,16 @@
               <a class="main-navigation-menu" href="#">Клиенты</a>
             </li>
             <li>
-              <a class="main-navigation-menu" href="#">Магазин</a>
+              <a class="main-navigation-menu-current">Магазин</a>
             </li>
             <li>
               <a class="main-navigation-menu" href="#">Контакты</a>
             </li>
-            <li>
-              <a class="main-navigation-menu" href="#"><img src="#" alt="">Корзина
-              </a>
-            </li>
           </ul>
+          <div class="main-header-user-block">
+            <a class="main-header-bin" href="#"><img src="#" alt="">Корзина
+            </a>
+          </div>
         </nav>
         <div class="main-header-hello">
           <h1>Добро пожаловать в магазин готовых макетов</h1>
@@ -37,26 +35,28 @@
     </header>
     <main>
       <div class="shop-content-left">
-        <h3>Стоимость:</h3> <!-- по идее должен быть как СЕТКА: и ОСОБЕННОСТИ: только жирненький?!-->
-        <input type="range" min="0" max="15000">
-        <span>От</span>
-        <div class="shop-fromto">0</div>
-        <span>До</span>
-        <div class="shop-fromto">15000</div> <!-- или это интерактивные поля, меняющиеся, если мотать колесо туды-сюды -->
         <form>
+          <fieldset class="shop-pricechoice">
+            <legend class="shop-content-title">Стоимость:</legend>
+            <div class="sliderok"> <!-- <input type="range" min="0" max="15000"> --></div>
+            <div class="shop-fromto">
+              <label>От<input type="text" value="0"></label>
+              <label>До<input type="text" value="15000"></label>
+            </div>
+          </fieldset>
           <fieldset class="shop-netchoice">
             <legend class="shop-content-title">Сетка:</legend>
             <ul class="shop-content-nettype">
               <li>
-                <input type="radio" name="type" id="type1" value="a" checked>
+                <input type="radio" name="grid-type" id="type1" value="a" checked>
                 <label for="type1">Адаптивная</label>
               </li>
               <li>
-                <input type="radio" name="type" id="type2" value="b">
+                <input type="radio" name="grid-type" id="type2" value="b">
                 <label for="type2">Фиксированная</label>
               </li>
               <li>
-                <input type="radio" name="type" id="type3" value="c">
+                <input type="radio" name="grid-type" id="type3" value="c">
                 <label for="type3">Резиновая</label>
               </li>
             </ul>
@@ -90,19 +90,34 @@
         </form>
       </div>
       <div class="shop-content-right">
-        <span>Сортировать:</span>
-        <ul>
-          <li><a href="#">по цене</a></li>
-          <li><a href="#">по типу</a></li>
-          <li><a href="#">по функционалу</a></li> <!-- сомнительно это всё, конечно -->
-        </ul>
-        <div class="updownsort"></div> <!-- направляющие треуголнички... что это как это вообще-->
+        <div class="shop-sortingmatter">
+          <span>Сортировать:</span>
+          <ul>
+            <li><a href="#">по цене</a></li>
+            <li><a href="#">по типу</a></li>
+            <li><a href="#">по функционалу</a></li>
+          </ul>
+          <div class="updownsort">
+            <a href="#" alt="от меньшего к большему"></a>
+            <a href="#" alt="от большего к меньшему"></a>
+          </div> <!-- направляющие треугольнички... или они img-->
+        </div>
         <ul class="shop-content-itemlist">
           <li class="shop-item">
             <a href="#"><img src="#" alt=""></a>
+            <div class="shop-item-card">
+              <h2><a href="#">Aviator</a></h2>
+              <p>Одностраничный макет с авторским дизайном</p>
+              <a href="#">8000 Р.</a>
+            </div> <!-- а такое у каждой карточки надо сделать.. по сути то-->
           </li>
           <li class="shop-item">
             <a href="#"><img src="#" alt=""></a>
+            <div class="shop-item-card">
+              <h2><a href="#">Sunset</a></h2>
+              <p>Интернет-магазин с личным кабинетом</p>
+              <a href="#">10000 Р.</a>
+            </div>
           </li>
           <li class="shop-item">
             <a href="#"><img src="#" alt=""></a>
@@ -119,18 +134,15 @@
         </ul>
       </div>
       <div class="shop-paginator">
-        <div class="shop-page">
-          <a class="btn-page">1</a>
-        </div>
-        <div class="shop-page">
-          <a class="btn-page" href="#">2</a>
-        </div>
-        <div class="shop-page">
-          <a class="btn-page" href="#">3</a>
-        </div>
-        <div class="shop-page">
-          <a class="btn-page" href="#">Следующая</a>
-        </div>
+        <ul>
+          <li><a class="btn-page">1</a>
+          </li>
+          <li><a class="btn-page" href="#">2</a>
+          </li>
+          <li><a class="btn-page" href="#">3</a>
+          </li>
+          <li><a class="btn-page" href="#">Следующая</a>
+          </li>        
       </div>
     </main>
     <footer class="footer">

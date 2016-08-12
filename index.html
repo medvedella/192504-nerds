@@ -8,10 +8,8 @@
     <header class="main-header">
       <div class="container">
         <nav class="main-header-navigation">
+          <a class="main-navigation-logo"><img src="#" alt=""></a>
           <ul class="main-header-navigation-list">
-            <li>
-              <a class="main-navigation-logo"><img src="#" alt=""></a>
-            </li>
             <li>
               <a class="main-navigation-menu" href="#">Студия</a>
             </li>
@@ -24,50 +22,63 @@
             <li>
               <a class="main-navigation-menu" href="#">Контакты</a>
             </li>
-            <li>
-              <a class="main-navigation-menu" href="#"><img src="#" alt="">Корзина
-              </a>
-            </li>
           </ul>
+          <div class="main-header-user-block">
+            <a class="main-header-bin" href="#"><img src="#" alt="">Корзина
+            </a>
+          </div>
         </nav>
         <div class="main-header-slider">
-          <h2>Долго, дорого, скрупулезно.</h2>
-          <p>Математически выверенный дизайн<br>
-          для вашего сайта или мобильного приложения.</p>
-          <a class="header-slider-knowmore" href="#">Узнать больше</a>
-
-          <img src="#" alt=""> <!-- или тут тоже slider left - slider right.. а точечки??!!-->
+          <div class="slider-content">
+            <div class="slider-content-slide1">
+              <h2>Долго, дорого, скрупулезно.</h2>
+              <p>Математически выверенный дизайн<br>
+              для вашего сайта или мобильного приложения.</p>
+              <a class="header-slider-knowmore" href="#">Узнать больше</a>
+              <img src="#" alt="">
+            </div>
+            <div class="slider-content-slide2">
+            </div>
+            <div class="slider-content-slide3">
+            </div>
+          </div>
+          <div class="slider-slidermanagement">
+            <ul>
+              <li class="slidermanagement-pointone"></li>
+              <li class="slidermanagement-pointtwo"></li>
+              <li class="slidermanagement-pointthree"></li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
     <main class="container">
-      <div class="main-items">
+      <div class="main-items"> <!-- эта обёртка может не потребоваться! -->
         <ul class="items-list">
           <li class="">
-            <a class="" href="#"><img src="#" alt=""></a>
+            <img src="#" alt="">
             <h3>Веб-сайты</h3>
             <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <button class="items-btn" type="submit">Заказать</button>
+            <a class="items-btn" href="#">Заказать</a>
           </li>
           <li class="">
-            <a class="" href="#"><img src="#" alt=""></a>
+            <img src="#" alt="">
             <h3>Приложения</h3>
             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-            <button class="items-btn" type="submit">Заказать</button>
+            <a class="items-btn" href="#">Заказать</a>
           </li>
           <li class="">
-            <a class="" href=""><img src="#" alt=""></a>
+            <img src="#" alt="">
             <h3>Презентации</h3>
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <button class="items-btn" type="submit">Заказать</button>
+            <a class="items-btn">Заказать</a>
           </li>
         </ul>
       </div>
-
-      <!-- что это за полосочка такая-->
+      <!-- тут игнорируемая полоска-->
       <div class="main-about">
         <div class="main-about-left">
-          <h2>Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
+          <p><strong>Мы - маленькая, но гордая дизайн-студия из Краснодара.</strong></p>
           <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчёт выше креатива. Работаем не покладая рук, как роботы.</p>
           <h4>Выполняем заказы на разработку:</h4>
           <ul class="main-about-list">
@@ -78,7 +89,7 @@
         </div>
         <div class="main-about-right">
           <img class="main-about-right-logo" src="#" alt="">
-          <span>Since 2004</span>
+          <div class="main-about-right-since">Since 2004</div>
           <h4>Как мы работаем:</h4>
           <ul class="main-about-list">
             <li>С самоотдачей 146%</li>
@@ -87,8 +98,7 @@
           </ul>
         </div>
       </div>
-
-      <!-- следующий блок в эту полосочку.. -->
+      <!-- полосочка ещё одна -->
       <div class="main-ourclients">
         <ul class="ourclientslist">
           <li><a><img src="#" alt=""></a></li>
@@ -96,7 +106,6 @@
           <li><a><img src="#" alt=""></a></li>
         </ul>
       </div>
-
     </main>
     <footer class="footer">
       <div class="footer-map">
@@ -105,14 +114,16 @@
           <b>Nёrds Design Studio</b>
           <p>191186, Санкт-Петербург,
           ул. Б. Конюшенная, д. 19/8</p>
-          <p>тел. +7 (812) 275-75-75</p> <!-- хм хм-->
-          <a class="btn-writeus">Напишите нам</a> <!-- а вот как это всё чудо над картой нависает - загадка-->
+          <p>тел. +7 (812) 275-75-75</p>
+          <a class="btn-writeus">Напишите нам</a>
         </div>
       </div>
       <div class="footer-social">
-        <a class="social-btn" href="#">ВКонтакте</a>
-        <a class="social-btn" href="#">Фейсбук</a>
-        <a class="social-btn" href="#">Инстаграм</a>
+        <div class="container"> <!-- не знаю, правильно ли я поняла-->
+          <a class="social-btn" href="#">ВКонтакте</a>
+          <a class="social-btn" href="#">Фейсбук</a>
+          <a class="social-btn" href="#">Инстаграм</a>
+        </div>
         <h2>Давайте дружить, это выгодно!</h2>
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
