@@ -1,14 +1,21 @@
 body {
-  font-size: ;
-  line-height: ;
-  color: ;
-  font-weight: ;
+  font-size: 16px;
+  line-height: 22px;
+  color: #283136;
+  font-weight: normal;
   font-family: "Roboto", sans-serif;
 }
 h2 {
   font-size: 36px;
   line-height: 36px;
   color: #000000;
-  font-weight: ;
+  font-weight: normal;;
+  font-family: "Roboto", sans-serif;
+}
+h3 {
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  font-weight: normal;
   font-family: "Roboto", sans-serif;
 }
