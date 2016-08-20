@@ -3,7 +3,7 @@ body {
   line-height: 22px;
   color: #283136;
   font-weight: 400;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   background: lightyellow;
 }
 h2 {
@@ -11,13 +11,13 @@ h2 {
   line-height: 36px;
   color: #000000;
   font-weight: 400; /* тут ещё подумаю - вообще насчёт всех заголовков*/
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
 }
 h3 {
   font-size: 18px;
   line-height: 30px;
   color: #000000;
-  font-weight: ;
+  font-weight: 400;
   font-family: "Roboto", "Arial", sans-serif;
 }
 .clearfix::after {
