@@ -2,20 +2,56 @@ body {
   font-size: 16px;
   line-height: 22px;
   color: #283136;
-  font-weight: normal;
+  font-weight: 400;
   font-family: "Roboto", sans-serif;
+  background: lightyellow;
 }
 h2 {
   font-size: 36px;
   line-height: 36px;
   color: #000000;
-  font-weight: normal;;
+  font-weight: 400; /* тут ещё подумаю - вообще насчёт всех заголовков*/
   font-family: "Roboto", sans-serif;
 }
 h3 {
   font-size: 18px;
   line-height: 30px;
   color: #000000;
-  font-weight: normal;
-  font-family: "Roboto", sans-serif;
+  font-weight: ;
+  font-family: "Roboto", "Arial", sans-serif;
+}
+.clearfix::after {
+  content:"";
+  display: table;
+  clear: both;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  background: white;
+}
+.main-header {
+  background: lightgray;
+}
+.main-navigation-logo {
+  float: left;
+}
+.main-header-navigation-list {
+  float: left;
+}
+.main-header-user-block {
+  float: right;
+}
+main {
+  width: 880px;
+}
+ul > li {
+  display: inline-block;
+  list-style: none;
+}
+.main-about-left {
+  float: left;
+}
+.main-about-right {
+  float: right;
 }
