@@ -6,14 +6,14 @@ body {
   font-family: "Roboto", "Arial", sans-serif;
   background: lightyellow;
 }
-h2 {
+h1 {
   font-size: 36px;
   line-height: 36px;
   color: #000000;
   font-weight: 400; /* тут ещё подумаю - вообще насчёт всех заголовков*/
   font-family: "Roboto", "Arial", sans-serif;
 }
-h3 {
+h2 {
   font-size: 18px;
   line-height: 30px;
   color: #000000;
@@ -45,13 +45,36 @@ h3 {
 main {
   width: 880px;
 }
-ul > li {
+
+.main-items {
+  width: 880px;
+  padding: 80px 5px;
+  font-size: 0;
+  vertical-align: left;
+}
+.main-items > li {
   display: inline-block;
-  list-style: none;
+}
+.main-item1 {
+  width: 240px;
+}
+.main-item2 {
+  width: 240px;
+}
+.main-item3 {
+  width: 240px;
+}
+
+
+.main-about {
+  padding: 20px 150px;;
 }
 .main-about-left {
   float: left;
+  width: 625px;
+  margin-right: 20px;
 }
 .main-about-right {
   float: right;
+  width: 235px;
 }
